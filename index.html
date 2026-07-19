@@ -7,48 +7,83 @@
 
 <style>
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#111;
-    color:white;
+margin:0;
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
 }
+
 header{
-    background:#00994d;
-    padding:20px;
-    text-align:center;
-    font-size:28px;
-    font-weight:bold;
+background:#16a34a;
+padding:18px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
 }
+
+.menu{
+display:flex;
+justify-content:space-around;
+background:#1f1f1f;
+padding:12px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
 .card{
-    background:#222;
-    margin:15px;
-    padding:15px;
-    border-radius:12px;
+background:#222;
+margin:15px;
+padding:15px;
+border-radius:12px;
 }
+
 .live{
-    color:#00ff66;
-    font-weight:bold;
+color:#00ff66;
+font-weight:bold;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#16a34a;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+margin-top:10px;
 }
 </style>
 
 </head>
+
 <body>
 
 <header>⚽ SüperLig Live</header>
 
+<div class="menu">
+<a href="#">Canlı</a>
+<a href="#">Maçlar</a>
+<a href="#">Puan</a>
+<a href="#">Takımlar</a>
+</div>
+
 <div class="card">
 <h2>🔴 Canlı Maçlar</h2>
-<p class="live">Henüz canlı maç bulunmuyor.</p>
+<p class="live">Şu anda canlı maç bulunmuyor.</p>
 </div>
 
 <div class="card">
 <h2>📅 Bugünkü Maçlar</h2>
-<p>Maçlar burada gösterilecek.</p>
+<p>Maçlar yakında burada listelenecek.</p>
 </div>
 
 <div class="card">
-<h2>📊 Puan Durumu</h2>
-<p>Puan durumu burada gösterilecek.</p>
+<h2>📊 Süper Lig Puan Durumu</h2>
+<button>Puan Durumunu Gör</button>
 </div>
 
 </body>
